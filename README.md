@@ -1,39 +1,87 @@
-# Bharat Bank – Net Banking System
+# 🏦 Bharat Bank – Net Banking System
 
-A modern, responsive net banking web application built using **Next.js, React, TypeScript, and Appwrite**. Bharat Bank provides an interactive banking dashboard where users can manage bank accounts, view balances, track transactions, and perform demo fund transfers.
+A modern, responsive net banking web application built with **Next.js, React, TypeScript, and Appwrite**.
 
-The project demonstrates the development of a full-stack banking interface with authentication, account management, and financial transaction workflows.
+Bharat Bank is a full-stack banking demo application designed to provide an interactive banking experience. Users can explore connected bank accounts, view account balances, track transaction history, and use the fund transfer interface through a clean and responsive dashboard.
 
-## Features
+The project demonstrates practical implementation of frontend development, backend integration, authentication, bank connectivity, and payment-related workflows.
 
-- **User Authentication:** User registration, sign-in, and session management.
-- **Bank Dashboard:** View account information and an overview of banking activity.
-- **Account Management:** View and manage linked bank accounts.
-- **Balance Overview:** Display account balances through an interactive dashboard.
-- **Fund Transfers:** Transfer funds using the payment transfer interface.
-- **Transaction History:** View recent transactions and transaction details.
-- **Bank Integration:** Plaid integration for bank-linking functionality.
-- **Payment Processing:** Dwolla integration in the application backend.
-- **Responsive Interface:** Clean banking dashboard with reusable UI components.
-- **Interactive Visualizations:** Charts and animated balance counters.
+---
 
-## Tech Stack
+## 📸 Application Screenshots
+
+### 1. My Bank Accounts
+
+View connected bank accounts with account balances and masked card details.
+
+![My Bank Accounts](screenshots/my-bank-accounts.png)
+
+### 2. Transaction History
+
+View transaction records with transaction amounts, status, dates, channels, and categories.
+
+![Transaction History](screenshots/transaction-history.png)
+
+> More application screenshots can be added here as additional pages are documented.
+
+---
+
+## ✨ Key Features
+
+### 🔐 User Authentication
+- User registration and sign-in.
+- Authentication and session management.
+- User-specific banking dashboard.
+
+### 🏦 Bank Account Management
+- View connected bank accounts.
+- Display bank names and account balances.
+- Interactive bank card interface.
+- Support for multiple linked bank accounts.
+
+### 💳 Transaction History
+- View transaction records.
+- Display transaction amounts and dates.
+- Track transaction status.
+- View transaction channels and categories.
+
+### 💸 Fund Transfers
+- Dedicated fund transfer interface.
+- Transfer-related form handling.
+- Payment workflow integration.
+
+### 📊 Dashboard and Visualizations
+- Interactive banking dashboard.
+- Account balance overview.
+- Transaction information and visualizations.
+- Responsive user interface.
+
+### 🔗 Third-Party Integrations
+- Appwrite for backend services and authentication.
+- Plaid for bank connectivity functionality.
+- Dwolla for payment-related integration.
+
+---
+
+## 🛠️ Technology Stack
 
 | Technology | Purpose |
 |---|---|
 | Next.js 14 | Full-stack React framework |
-| React 18 | User interface |
+| React 18 | User interface development |
 | TypeScript | Type-safe development |
-| Appwrite | Authentication and backend services |
-| Plaid | Bank account connectivity |
-| Dwolla | Payment transfer integration |
-| Tailwind CSS | Styling and responsive layouts |
+| Appwrite | Backend services and authentication |
+| Plaid | Bank connectivity |
+| Dwolla | Payment integration |
+| Tailwind CSS | Styling and responsive design |
 | Chart.js | Data visualization |
-| React Hook Form | Form management |
+| React Hook Form | Form handling |
 | Zod | Form validation |
 | Sentry | Error monitoring |
 
-## Project Structure
+---
+
+## 📁 Project Structure
 
 ```text
 Bharat-Bank---Netbanking-System/
@@ -63,6 +111,7 @@ Bharat-Bank---Netbanking-System/
 │   └── ui/
 │
 ├── constants/
+│
 ├── lib/
 │   ├── actions/
 │   ├── appwrite.ts
@@ -71,39 +120,50 @@ Bharat-Bank---Netbanking-System/
 │
 ├── public/
 ├── types/
+│
 ├── package.json
 ├── package-lock.json
 ├── tailwind.config.ts
 └── tsconfig.json
 ```
 
-## Getting Started
+---
+
+## ⚙️ Installation and Setup
 
 Follow these steps to run the project locally.
 
-### 1. Clone the repository
+### Prerequisites
+
+- Node.js
+- npm
+- Appwrite account
+- Plaid developer account for bank connectivity configuration
+- Dwolla developer account for payment integration configuration
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/yuvrajsi1806/Bharat-Bank---Netbanking-System.git
 ```
 
-### 2. Navigate to the project directory
+### 2. Navigate to the Project Directory
 
 ```bash
 cd Bharat-Bank---Netbanking-System
 ```
 
-### 3. Install dependencies
+### 3. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Configure environment variables
+### 4. Configure Environment Variables
 
-Create a `.env.local` file in the root directory and configure the required credentials.
+Create a `.env.local` file in the root directory.
 
-The application uses environment variables for Appwrite and Plaid configuration. Add the required values from your respective service dashboards:
+Add the required configuration values:
 
 ```env
 NEXT_PUBLIC_APPWRITE_ENDPOINT=
@@ -114,48 +174,86 @@ PLAID_CLIENT_ID=
 PLAID_SECRET=
 ```
 
-Configure any additional variables required by the Dwolla integration according to the application configuration.
+Configure the additional Dwolla environment variables required by the application.
 
-**Important:** Never upload `.env.local` or expose API keys, secret keys, or private credentials on GitHub.
+**Important:** Use your own developer credentials. Never upload `.env.local`, secret keys, access tokens, or private credentials to GitHub.
 
-### 5. Start the development server
+### 5. Run the Development Server
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open your browser and visit:
 
-## Application Status
-
-- Application execution has been tested successfully.
-- The application runs as expected in the configured development environment.
-- Banking workflows are intended for demonstration and learning purposes.
-
-## Learning Outcomes
-
-Through this project, I gained practical experience in:
-
-- Developing full-stack applications using Next.js and React.
-- Implementing authentication and session handling.
-- Integrating backend services using Appwrite.
-- Working with bank connectivity and payment integration libraries.
-- Building reusable and responsive UI components.
-- Managing forms, validations, and transaction workflows.
-- Structuring a scalable TypeScript application.
-
-## Disclaimer
-
-**Bharat Bank is an educational/demo project.** It is not an actual banking institution and must not be used for real financial transactions or storing real banking credentials.
-
-## Author
-
-**Yuvraj Singh Rajpurohit**
-
-GitHub: [yuvrajsi1806](https://github.com/yuvrajsi1806)
+```text
+http://localhost:3000
+```
 
 ---
 
-If you find this project useful, feel free to explore the repository and learn from its implementation.
+## 🎯 Project Objectives
 
-⭐ Star this repository if you like the project!
+The main objective of Bharat Bank is to develop a responsive and interactive net banking demo application while gaining practical experience with modern full-stack web technologies.
+
+The project focuses on:
+
+- Building a modern banking user interface.
+- Implementing user authentication.
+- Managing connected bank account information.
+- Displaying transaction history.
+- Developing fund transfer workflows.
+- Integrating third-party backend and financial service APIs.
+- Creating reusable and responsive React components.
+
+---
+
+## 📚 Learning Outcomes
+
+Working on this project helped me gain practical experience in:
+
+- Full-stack web development using Next.js and React.
+- TypeScript and component-based development.
+- Backend integration using Appwrite.
+- Authentication and session management.
+- Working with Plaid and Dwolla integrations.
+- Form handling and validation.
+- Responsive UI development using Tailwind CSS.
+- Organizing a full-stack application.
+- Building interactive dashboards and transaction interfaces.
+
+---
+
+## 🔮 Future Improvements
+
+- Improve transaction workflow reliability and validation.
+- Add more detailed transaction filters.
+- Improve account and transaction analytics.
+- Enhance security and access control.
+- Add additional dashboard visualizations.
+- Improve error handling and user feedback.
+- Expand automated testing.
+
+---
+
+## ⚠️ Disclaimer
+
+**Bharat Bank is an educational and demonstration project.**
+
+It is not an actual banking institution and is not intended for real financial transactions. Do not use real banking credentials, personal financial information, or production payment data with this project.
+
+---
+
+## 👨‍💻 Author
+
+**Yuvraj Singh Rajpurohit**
+
+Computer Science & Engineering | Artificial Intelligence & Machine Learning
+
+GitHub: [@yuvrajsi1806](https://github.com/yuvrajsi1806)
+
+Project Repository: [Bharat Bank – Net Banking System](https://github.com/yuvrajsi1806/Bharat-Bank---Netbanking-System)
+
+---
+
+⭐ If you find this project interesting, consider giving the repository a star!
